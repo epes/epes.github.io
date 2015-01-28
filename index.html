@@ -40,10 +40,10 @@
                 <h1 class="name">Robert Eperjesi</h1>
                 <h2 class="desc">Computer Engineering Student</h2>   
                 <ul class="social list-inline">
-                    <li><a href="https://twitter.com/roberteperjesi"><i class="fa fa-twitter"></i></a></li>                   
-                    <li><a href="https://plus.google.com/108851246856419450635"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/roberteperjesi"><i class="fa fa-linkedin"></i></a></li>
-                    <li class="last-item"><a href="https://github.com/epes"><i class="fa fa-github-alt"></i></a></li>               
+                    <li><a href="https://twitter.com/roberteperjesi" target="_blank"><i class="fa fa-twitter"></i></a></li>                   
+                    <li><a href="https://plus.google.com/108851246856419450635" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/roberteperjesi" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="last-item"><a href="https://github.com/epes" target="_blank"><i class="fa fa-github-alt"></i></a></li>               
                 </ul> 
             </div><!--//profile-->
             <a class="btn btn-cta-primary pull-right" href="mailto:robert@eperjesi.me" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>              
@@ -89,20 +89,23 @@
                         <h2 class="heading">Projects</h2>
                         <div class="content">                       
                             <div class="item featured text-center">
-                                <h3 class="title"><a href="http://fayvrit.com" target="_blank">Fayvrit</a></h3>
-                                <p class="summary">Find what others have been looking for!</p>
+                                <h3 class="title"><a href="http://eperjesi.me/lolup" target="_blank">lolup</a><span class="label label-theme">Open Source</span></h3>
+                                <p class="summary">Are the League of Legends servers online?</p>
                                 <div class="featured-image">
-                                    <a href="http://fayvrit.com" target="_blank">
-                                    <img class="img-responsive project-image" src="assets/images/projects/project_fayvrit.png" alt="project name" />
+                                    <a href="http://eperjesi.me/lolup" target="_blank">
+                                    <img class="img-responsive project-image" src="assets/images/projects/project_lolup.png" alt="project name" />
                                     </a>
                                     <div class="ribbon">
                                         <div class="text">Website</div>
                                         </div>
                                     </div>
                                     
-                                <div class="desc text-left">                                    
-                                    <p>Fayvrit lets you browse Amazon products that others have posted to reddit. You get the option of scrolling through all of the most recent or you can specify a subreddit and it will narrow your search.</p>
-                                    <p>This project is a learning experience as I'm getting to work with frameworks I've never seen before. It is designed around AngularJS so the whole site is technically a single page application. Bootstrap allows the site to be responsive no matter which device you view it on. All of the data is three-way bound using Firebase and AngularJS, which allows it to load new data onto the page as soon as it hits the database. It also allows the narrowing of searches instantly and with no page refreshing. Lastly I got to work with Heroku for the first time as that's where this app is hosted.</p>
+                                <div class="desc text-left">
+
+                                    <p>lolup lets you know if the League of Legends servers are online. It will display a message as well as a green background if the game and store are online, a yellow background if the game is online but the store is offline, or a red background if the game is offline.</p>
+
+                                    <p>This project is a learning experience as I'm getting to know more about GitHub pages, Javascript, AngularJS, as well as working with REST endpoints. The controller uses the <a href="https://developer.riotgames.com/" target="_blank">Riot API</a> REST endpoints specific to the chosen region to determine the status of the servers. A specific region can be accessed by going to <i>http://eperjesi.me/lolup/#/{region}</i>, for example <a href="http://eperjesi.me/lolup/#/na" target="_blank">http://eperjesi.me/lolup/#/na</a>. Source code can be found on <a href="https://github.com/epes/lolup" target="_blank">GitHub</a>.</p>
+
                                 </div><!--//desc-->                        
                             </div><!--//item-->
 
@@ -114,18 +117,18 @@
                                 </a>
                                 <div class="desc col-md-8 col-sm-8 col-xs-12">
                                     <h3 class="title"><a href="http://challengepost.com/software/mtanks" target="_blank">MTanks - MHacks Submission</a> <span class="label label-theme">Open Source</span></h3>
-                                    <p>Educational programming game.</p>
+                                    <p>Inspired by Robocode and coded during the MHacks hackathon, MTanks is a web based programming game. Using the provided API, users can program the behavior of tanks using Java right in the browser and face off against tanks that other users have created.</p>
                                     <p><a class="more-link" href="http://challengepost.com/software/mtanks" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
                                 </div><!--//desc-->                          
                             </div><!--//item-->
 
                             <div class="item row">
                                 <div class="col-md-4 col-sm-4 col-xs-12" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/project_fayvrit.png" alt="project name" />
+                                <img class="img-responsive project-image" src="assets/images/projects/project_breadboard.png" alt="project name" />
                                 </div>
                                 <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="http://fayvrit.com" target="_blank">Microprocessors - EE367 - Class Project</a></h3>
-                                    <p>Breadboard 8-bit Microprocessor.</p>
+                                    <h3 class="title">Microprocessors - EE367 - Class Project</h3>
+                                    <p>Built a microprocessor with two 8-bit registers, an ALU, and a shared bus using integrated circuits. Programmed a security lock, traffic light system, and automated testing on the processor using Assembly.</p>
                                 </div><!--//desc-->                          
                             </div><!--//item-->
 
@@ -135,7 +138,7 @@
                                 </a>
                                 <div class="desc col-md-8 col-sm-8 col-xs-12">
                                     <h3 class="title"><a href="http://fayvrit.com" target="_blank">Fayvrit</a></h3>
-                                    <p>Educational programming game.</p>
+                                    <p>Web polling Java application tied with an AngularJS web application to display the most recently linked Amazon products on <i>reddit.com</i>, sortable by subreddit. Utilizes three way binding with AngularJS and Firebase to produce seamless changes to the page.</p>
                                     <p><a class="more-link" href="http://fayvrit.com" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
                                 </div><!--//desc-->                          
                             </div><!--//item-->
@@ -256,7 +259,8 @@
                                 <h4 class="university">University of Wisconsin - Milwaukee <span class="year">(2012-2015)</span></h4>
 
                                 <!-- This is dirty, will need to create a new class if necessary -->
-                                <h4 class="university">In Major GPA: <span class="year">3.93</span></h4>
+                                <h4 class="university">Cumulative GPA: <span class="year">3.73</span></h4>
+                                <h4 class="university">In Major GPA: <span class="year">3.92</span></h4>
                             </div><!--//item-->
                         </div><!--//content-->
                     </div><!--//section-inner-->
