@@ -1,297 +1,57 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
     <title>Robert Eperjesi</title>
-    <!-- Meta -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="My personal portfolio.">
     <meta name="author" content="Robert Eperjesi">    
+
     <link rel="shortcut icon" href="favicon.ico">  
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-    <!-- github acitivity css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
+
+    <style>
+        body {
+            background: #262335;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        @media (min-width:960px)  { 
+            body {
+                flex-direction: row;
+            }
+        }
+
+        svg {
+            height: 100%;
+            width: 100%;
+            filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
+        }
+    </style>
 </head> 
 
 <body>
-    <!-- ******HEADER****** --> 
-    <header class="header">
-        <div class="container">                       
-            <img class="profile-image img-responsive pull-left" src="assets/images/profile.png" alt="Robert Eperjesi" />
-            <div class="profile-content pull-left">
-                <h1 class="name">Robert Eperjesi</h1>
-                <h2 class="desc">Software Engineer</h2>   
-                <ul class="social list-inline">
-                    <li><a href="https://twitter.com/roberteperjesi" target="_blank"><i class="fa fa-twitter"></i></a></li>                   
-                    <li><a href="https://plus.google.com/108851246856419450635" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/roberteperjesi" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li class="last-item"><a href="https://github.com/epes" target="_blank"><i class="fa fa-github-alt"></i></a></li>               
-                </ul> 
-            </div><!--//profile-->
-            <a class="btn btn-cta-primary pull-right" href="mailto:epesdev@gmail.com" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>              
-        </div><!--//container-->
-    </header><!--//header-->
+    <a href="https://www.linkedin.com/in/roberteperjesi" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg"
+        aria-label="LinkedIn" role="img"
+        viewBox="0 0 512 512"
+        fill="#fff"><rect
+        width="512" height="512"
+        rx="15%"
+        fill="#0077b5"/><circle cx="142" cy="138" r="37"/><path stroke="#fff" stroke-width="66" d="M244 194v198M142 194v198"/><path d="M276 282c0-20 13-40 36-40 24 0 33 18 33 45v105h66V279c0-61-32-89-76-89-34 0-51 19-59 32"/></svg>
+    </a>
+    <a href="https://github.com/epes" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+        aria-label="GitHub" role="img"
+        viewBox="0 0 512 512"><rect
+        width="512" height="512"
+        rx="15%"
+        fill="#181717"/><path fill="#fff" d="M335 499c14 0 12 17 12 17H165s-2-17 12-17c13 0 16-6 16-12l-1-44c-71 16-86-34-86-34-12-30-28-37-28-37-24-16 1-16 1-16 26 2 40 26 40 26 22 39 59 28 74 22 2-17 9-28 16-35-57-6-116-28-116-126 0-28 10-51 26-69-3-6-11-32 3-67 0 0 21-7 70 26 42-12 86-12 128 0 49-33 70-26 70-26 14 35 6 61 3 67 16 18 26 41 26 69 0 98-60 120-117 126 10 8 18 24 18 48l-1 70c0 6 3 12 16 12z"/></svg>
+    </a> 
     
-    <div class="container sections-wrapper">
-        <div class="row">
-            <div class="primary col-md-8 col-sm-12 col-xs-12">
-                <section class="about section">
-                    <div class="section-inner">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                            <p>I am a computer engineering student who started early. Ever since my freshman year of high school I've been fascinated with computers and how they work. I have taken apart many electronics only to find out I had no idea what I was doing and couldn't put them back together, but I regret nothing. It was all worth it the moment that the first computer I have ever built started up without a problem. My eagerness to learn along with self motivation has allowed me to make computers my work, school, and hobby. </p>   
-
-                            <p>Constantly attempting to learn I often find myself researching software frameworks and technology just to spend hours trying to master them. I've tried to master things such as Android app development, web development, web design, game development, image editing, video editing, 3D modeling and simulation, and many more. It's hard to say what I'm interested in because if it involves a computer I'm interested in anything and everything. If there's a new technology out there chances are I've already researched it. I can talk your ear off about electric cars, fiber optic networks, space elevators, or even Bitcoins!</p> 
-
-                            <p>What I'm trying to say is that if you're working with something interesting and are looking for others who would be interested, I'm your guy!</p>
-                         
-                        </div><!--//content-->
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-
-                <section class="experience section">
-                    <div class="section-inner">
-                        <h2 class="heading">Work Experience</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">Software Engineer - <span class="place"><a href="https://www.uber.com/" target="_blank">Uber</a></span> <span class="year">(March 2016 - Present)</span></h3>
-                                <p></p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Software Developer, Intern - <span class="place"><a href="https://www.epic.com/" target="_blank">Epic Systems</a></span> <span class="year">(May 2015 - August 2015)</span></h3>
-                                <p>Simplified the check in process at hospitals by implementing Near Field Communication within a patient facing mobile app to allow for self-check in with the tap of a phone.</p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Software Developer, Intern - <span class="place"><a href="https://www.epic.com/" target="_blank">Epic Systems</a></span> <span class="year">(May 2014 - August 2014)</span></h3>
-                                <p>Eased the distribution of digital ultrasound images by creating patient facing web and mobile applications that interface with an existing patient portal.</p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Software Engineer, Intern - <span class="place"><a href="http://www3.gehealthcare.com/en" target="_blank">GE Healthcare</a></span> <span class="year">(May 2013 - August 2013)</span></h3>
-                                <p>Combated alarm fatigue in hospitals by creating alarm analysis tools which led to active research discussions with a luminary site.</p>
-                            </div><!--//item-->
-                            
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-    
-               <section class="latest section">
-                    <div class="section-inner">
-                        <h2 class="heading">Projects</h2>
-                        <div class="content">                       
-                            <div class="item featured text-center">
-                                <h3 class="title">Most Recent: <a href="http://cs482project.herokuapp.com/" target="_blank">Mean Music</a><span class="label label-theme">Open Source</span></h3>
-                                <p class="summary">Class Project - CS482</p>
-                                <div class="featured-image">
-                                    <a href="http://cs482project.herokuapp.com/" target="_blank">
-                                    <img class="img-responsive project-image" src="assets/images/projects/project_meanmusic.png" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                        <div class="text">Web App</div>
-                                        </div>
-                                    </div>
-                                    
-                                <div class="desc text-left">
-
-                                    <p>Mean Music is a real-time sound composition web app that allows users to create music in multiplayer lobbies by combining standalone samples of sounds. It is my first attempt at the MEAN stack and my first real project with NodeJS. It was also my first attempt at making a web app look pretty so I utilized Material.css to get the Material Design look and feel in the browser.</p>
-
-                                </div><!--//desc-->                        
-                            </div><!--//item-->
-
-                            <hr class="divider" />
-
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="http://challengepost.com/software/enlighton-me-7vs1w" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/project_enlightonme.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="http://challengepost.com/software/enlighton-me-7vs1w" target="_blank">enLightOn me - MadHacks Submission</a> <span class="label label-theme">Open Source</span></h3>
-                                    <p>Hacked together a Leap Motion gesture controlled Tetris game with a fully functional NodeJS matchmaking system in the browser. Won 'Best use of Microsoft Azure' and 'Best Game or Entertaining Hack'.</p>
-                                    <p><a class="more-link" href="http://challengepost.com/software/enlighton-me-7vs1w" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="http://challengepost.com/software/mtanks" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/project_mtanks.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="http://challengepost.com/software/mtanks" target="_blank">MTanks - MHacks Submission</a> <span class="label label-theme">Open Source</span></h3>
-                                    <p>Inspired by Robocode and coded during the MHacks hackathon, MTanks is a web based programming game. Using the provided API, users can program the behavior of tanks using Java right in the browser and face off against tanks that other users have created.</p>
-                                    <p><a class="more-link" href="http://challengepost.com/software/mtanks" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-
-                            <div class="item row">
-                                <div class="col-md-4 col-sm-4 col-xs-12" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/project_breadboard.png" alt="project name" />
-                                </div>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title">Microprocessors - EE367 - Class Project</h3>
-                                    <p>Built a microprocessor with two 8-bit registers, an ALU, and a shared bus using integrated circuits. Programmed a security lock, traffic light system, and automated testing on the processor using Assembly.</p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://fayvrit.herokuapp.com" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/project_fayvrit.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="http://fayvrit.herokuapp.com" target="_blank">Fayvrit</a></h3>
-                                    <p>Web polling Java application tied with an AngularJS web application to display the most recently linked Amazon products on <i>reddit.com</i>, sortable by subreddit. Utilizes three way binding with AngularJS and Firebase to produce seamless changes to the page.</p>
-                                    <p><a class="more-link" href="http://fayvrit.herokuapp.com" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-
-                            <div class="item row">
-                                <div class="col-md-4 col-sm-4 col-xs-12" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/project_minecraft.png" alt="project name" />
-                                </div>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title">Minecraft Modifications</h3>
-                                    <p> Created multiple Minecraft modifications. Active member of the mod development community. Created a set of popular tutorials for Java Minecraft modification. Collaborated with a popular YouTube personality to create a one-of-a-kind modification to engage YouTube viewers.</p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-                
-            </div><!--//primary-->
-            <div class="secondary col-md-4 col-sm-12 col-xs-12">
-                 <aside class="info aside section">
-                    <div class="section-inner">
-                        <h2 class="heading sr-only">Basic Information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span> San Francisco, CA</li>
-                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="mailto:epesdev@gmail.com">epesdev@gmail.com</a></li>
-                                <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="https://www.eperjesi.me">https://eperjesi.me</a></li>
-                            </ul>
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//aside-->
-                
-                <aside class="skills aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Skills</h2>
-                        <div class="content">
-                            
-                            <div class="skillset">
-                               
-                                <div class="item">
-                                    <h3 class="level-title">Java<span class="level-label">Advanced</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="95%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">HTML &amp; CSS<span class="level-label">Advanced</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="90%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">JavaScript<span class="level-label">Advanced</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="90%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-
-                                <div class="item">
-                                    <h3 class="level-title">Android<span class="level-label">Intermediate</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="85%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <p><a class="more-link" href="https://www.linkedin.com/in/roberteperjesi"><i class="fa fa-external-link"></i> More on LinkedIn</a></p> 
-                            </div>              
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//section-->
-                
-                <aside class="education aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">                      
-                                <h3 class="title"><i class="fa fa-graduation-cap"></i> B.S. Computer Engineering</h3>
-                                <h4 class="university">University of Wisconsin - Milwaukee <span class="year">(2012-2015)</span></h4>
-
-                                <!-- This is dirty, will need to create a new class if necessary -->
-                                <h4 class="university">Cumulative GPA: <span class="year">3.7</span></h4>
-                                <h4 class="university">In Major GPA: <span class="year">3.9</span></h4>
-                            </div><!--//item-->
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                            
-                <aside class="languages aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Languages</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Fluent <br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>Slovak:</strong></span>
-                                    <span class="level">Fluent <br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>Czech:</strong></span>
-                                    <span class="level">Proficient <br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i></i> </span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>Spanish:</strong></span>
-                                    <span class="level">Competent <br class="visible-sm visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"> <i class="fa fa-star"></i></i></span>
-                                </li><!--//item-->
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-              
-            </div><!--//secondary-->    
-        </div><!--//row-->
-    </div><!--//masonry-->
-    
-    <!-- ******FOOTER****** --> 
-    <footer class="footer">
-        <div class="container text-center">
-                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">3rd Wave Media</a> for developers</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
- 
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>        
     <!-- google analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
